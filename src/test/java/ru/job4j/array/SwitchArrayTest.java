@@ -19,8 +19,8 @@ public class SwitchArrayTest {
     @Test
     public void whenSwapMiddleToNext() {
         int[] input = {13, 23, 33, 53, 43, 63, 73, 83};
-        int source = input.length / 2;
-        int dest = input.length / 2 - 1;
+        int source = 4;
+        int dest = 3;
         int[] result = SwitchArray.swap(input, source, dest);
         int[] expected = {13, 23, 33, 43, 53, 63, 73, 83};
         assertArrayEquals(expected, result);
