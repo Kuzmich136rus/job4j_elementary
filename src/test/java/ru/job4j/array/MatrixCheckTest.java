@@ -1,0 +1,32 @@
+package ru.job4j.array;
+
+import org.junit.Test;
+
+import org.junit.Assert;
+
+public class MatrixCheckTest {
+
+    @Test
+    public void whenHasMonoHorizontal() {
+        char[][] input = {
+                {' ', ' ', ' '},
+                {'X', 'X', 'X'},
+                {' ', ' ', ' '},
+        };
+        int row = 1;
+        boolean result = MatrixCheck.monoHorizontal(input, row);
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void whenNoMonoHorizontal() {
+        char[][] input = {
+                {'Y', 'Z', 'X'},
+                {'X', 'Y', 'Z'},
+                {'A', 'X', 'X'},
+        };
+        int row = 2;
+        boolean result = MatrixCheck.monoHorizontal(input, row);
+        Assert.assertFalse(result);
+    }
+}
