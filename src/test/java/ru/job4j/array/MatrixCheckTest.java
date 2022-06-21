@@ -21,9 +21,9 @@ public class MatrixCheckTest {
     @Test
     public void whenNoMonoHorizontal() {
         char[][] input = {
-                {'Y', 'Z', 'X'},
-                {'X', 'Y', 'Z'},
-                {'A', 'X', 'X'},
+                {' ', ' ', 'X'},
+                {'X', ' ', ' '},
+                {' ', 'X', 'X'},
         };
         int row = 2;
         boolean result = MatrixCheck.monoHorizontal(input, row);
