@@ -44,7 +44,7 @@ public class PointTest {
 
     @Test
     public void when003to123then2Dot23() {
-        Point a = new Point(0,0,3 );
+        Point a = new Point(0, 0, 0);
         Point b = new Point(1, 2, 3);
         double result = a.distance3d(b);
         double expected = 2.23;
