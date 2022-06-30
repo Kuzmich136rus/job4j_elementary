@@ -34,11 +34,23 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax8To8Then8() {
-        int left = 8;
-        int right = 8;
-        int result = Max.max(left, right);
-        int expected = 8;
+    public void whenMax15To1To33Then33() {
+        int first = 15;
+        int second = 1;
+        int third = 33;
+        int result = Max.max(first, second, third);
+        int expected = 33;
+        assertEquals(result, expected);
+    }
+
+    @Test
+    public void whenMax0ToMin5ToMin5To4Then4() {
+        int a = 0;
+        int b = -5;
+        int c = -5;
+        int d = 4;
+        int result = Max.max(a, b, c, d);
+        int expected = 4;
         assertEquals(result, expected);
     }
 }
